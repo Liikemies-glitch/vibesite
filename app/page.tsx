@@ -14,11 +14,15 @@ export function HeroSection() {
   return (
     <section className="mx-auto flex max-w-[980px] flex-col items-center gap-2 py-8 md:py-12 md:pb-8 lg:py-24 lg:pb-20">
       <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">{
-        "Modernit, nopeat ja huippuoptimoidut verkkosivut - vain kahdessa viikossa"
+        "Se nopea, teknisesti täydellinen nettisivu, jota olet odottanut"
       }</h1>
-      <p className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl mt-6">{
-        "Vibekoodaus yhdistää huipputason designin, nopean toteutuksen ja ylivertaisen hakukoneoptimoinnin. Ensivedos jo samana päivänä."
-      }</p>
+      <p
+        className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl mt-6"
+        dangerouslySetInnerHTML={{
+          __html:
+            "Pienyrittäjille ja Startup-yrityksille <strong>huipputason</strong> design, <strong>nopea</strong> toteutus ja hakukoneoptimoitu nettisivu vibekoodaamalla. Ensivedos jo <strong>samana päivänä</strong>.",
+        }}
+      />
       <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10 mt-6">
         <RainbowButton className="shadow-2xl">
           {"Sovi ilmainen kartoitus"}
