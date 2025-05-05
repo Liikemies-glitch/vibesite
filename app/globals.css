@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -83,7 +87,6 @@
     transform: translateZ(0) rotate(270deg);}
   100% {
     transform: translateZ(0) rotate(360deg);}}
-  --rainbow: rainbow var(--speed, 2s) infinite linear;
   --color-color-5: var(--color-5);
   --color-color-4: var(--color-4);
   --color-color-3: var(--color-3);
@@ -180,5 +183,13 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Define custom utilities AFTER @tailwind directives and base layer */
+@layer utilities {
+  /* Define the utility class that uses the keyframes */
+  .animate-rainbow {
+    animation: rainbow 3s infinite linear;
   }
 }

@@ -21,12 +21,10 @@ export function HeroSection() {
       }</p>
       <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10 mt-6">
         <RainbowButton className="shadow-2xl">
-          {"Varaa ilmainen kartoitustapaaminen"}
-          <ArrowRight className="ml-1 inline-block h-4 w-4" />
+          {"Sovi ilmainen kartoitus"}
         </RainbowButton>
         <RainbowButton className="shadow-2xl text-black bg-[linear-gradient(#fff,#fff),linear-gradient(#fff_50%,rgba(255,255,255,0.6)_80%,rgba(0,0,0,0)),linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))]">
           {"Tutustu esimerkkeihin"}
-          <ArrowRight className="ml-1 inline-block h-4 w-4" />
         </RainbowButton>
       </div>
     </section>
