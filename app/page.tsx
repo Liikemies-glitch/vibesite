@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, PartyPopper } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
